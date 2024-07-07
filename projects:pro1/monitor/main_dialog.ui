@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>764</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>50</y>
+     <width>341</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>19</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>欢迎使用车流量检测和人流量检测系统</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="vehicle_putton">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>300</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>17</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>人车流量检测</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="face_detect">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>380</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>19</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>人脸识别</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>500</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>作者：张致豪</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>vehicle_putton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>goin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>360</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>381</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>face_detect</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>face_detect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>360</x>
+     <y>485</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>381</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>goin()</slot>
+  <slot>face_detect()</slot>
+ </slots>
+</ui>
