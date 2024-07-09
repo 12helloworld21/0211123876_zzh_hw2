@@ -39,4 +39,4 @@ class Ui_Dialog(object):
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.title.setText(_translate("Dialog", "欢迎进入内蒙古大学人车监控系统"))
         self.go.setText(_translate("Dialog", "进入系统"))
-import resources_rc
+#import resources_rc

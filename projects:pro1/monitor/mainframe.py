@@ -10,7 +10,7 @@ class MainDialog(QtWidgets.QMainWindow):
         super().__init__()
         self.label = QtWidgets.QLabel(self)#QLabel是Qt中用于显示文本或图像的控件
         self.setCentralWidget(self.label)#将之前创建的QLabel（即self.label）设置为窗口的中心部件
-        self.pixmap = QtGui.QPixmap(":1.jpg")#背景图，QPixmap是用于处理图像的类
+        self.pixmap = QtGui.QPixmap(":1.jpeg")#背景图，QPixmap是用于处理图像的类
         # 设置QLabel的尺寸
         self.label.resize(self.width(), self.height())
         self.label.setScaledContents(True)
